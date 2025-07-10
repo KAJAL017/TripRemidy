@@ -16,10 +16,10 @@ class WebsiteController extends Controller
         $password = 'Tripr@1234';
 
         // Test authentication endpoint
-        $authTest = Http::post('https://api.tbotechnology.in/authservice/api/Authenticate', [
+        $authTest = Http::post('https://Sharedapi.tektravels.com/SharedData.svc/rest/Authenticate', [
             'UserName' => $username,
             'Password' => $password,
-            'ClientId' => 'API_CONSOLE', // Often required
+            'ClientId' => 'ApiIntegrationNew', // Often required
             'Version' => '1.0' // Often required
         ]);
         dd($authTest);
